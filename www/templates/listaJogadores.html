@@ -1,0 +1,26 @@
+<ion-view>
+<ion-nav-title>
+  <h1 class="title">Jogadores Cadastrados</h1>
+</ion-nav-title>
+<ion-nav-buttons side="right">
+  <button class="button button-clear" ng-click="data.showReorder = !data.showReorder">Ordenar</button>
+</ion-nav-buttons>
+<ion-content>
+  <br>
+  <div class = "item item-input item-search">
+      <i class = "icon ion-android-search placeholder-ion-icon-search"></i>
+      <input type = "search" placeholder = "Procurar Time...">
+  </div>
+
+  <ion-list show-delete="showDelete" show-reorder="data.showReorder">
+    <ion-item ng-repeat="jogador in jogadores">
+      <h2> {{ jogador.nome}} </h2><h3>{{jogador.time}}</h3><h4>{{jogador.posicao}}</h4>
+       <ion-option-button class="button-assertive" ng-click="deleteJogador(jogador)">
+        remove
+      </ion-option-button>
+       <ion-reorder-button class="ion-navicon" on-reorder="moveJogador(jogador, $fromIndex, $toIndex)"></ion-reorder-button>
+       <ion-delete-button class="ion-minus-circled"></ion-delete-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+</ion-view>

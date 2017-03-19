@@ -1,48 +1,54 @@
 <ion-view>
-      <ion-nav-bar class="bar bar-positive">
-    <ion-nav-back-button>Voltar</ion-nav-back-button> <!-- botao voltar na barra superior -->
-    <ion-nav-title>
-      <h1 class="title">Cadastre já o seu Jogador !</h1> <!-- titulo barra superior -->
-    </ion-nav-title>
-  </ion-nav-bar>
-      <ion-content>
-       
-        <div class="list list-inset">
-          <h4> Nome </h4>
-          <label class="item item-input">
-            <input type="text" placeholder="Nome">
-          </label>
-          <label class="item item-input">
-            <input type="text" placeholder="Sobrenome">
-          </label>
-        </div>
+      <ion-nav-title>
+        <h1 class="title"> Cadastre já o seu Jogador! </h1> <!-- titulo barra superior -->
+      </ion-nav-title>
+  <ion-content>
+    <div class="list list-inset">
+      <h4>Nome</h4>
+      <label class="item item-input">
+        <input type="text" placeholder="Nome">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Sobrenome">
+      </label>
+    </div>
 
-        <div class="list list-inset">
-          <h4> Nº Camisa </h4>
-          <label class="item item-input">
-            <input type="number">
-          </label>
-        </div>
+    <div class="list list-inset">
+      <h4> Nª Camisa </h4>
+      <label class="item item-input">
+        <input type="number">       
+      </label>
+    </div>
 
-        <div class="list list-inset">
-          <h4>Time</h4>
-          <label class="item item-input">
-            <input type="text" placeholder="Nome">
-          </label>
-        </div>
+    <div class="list list-inset">
+      <h4> Time</h4>
+      <label class="item item-input">
+        <input type="text" placeholder="Nome do Time">
+      </label>
+    </div>
 
+    <div class="list list-inset">
+      <h4> Jogador </h4>
+       <label class="item item-input">
+        <select class="form-control" ng-model="jog.posicao" id="posicao">
+              <option value="goleiro">Goleiro</option>
+              <option value="PIvô"> Pivô</option>
+              <option value="zagueiro">Zagueiro</option>
+              <option value="lateral">Lateral</option>
+              <option value="volante">Volante</option>
+              <option value="meio-campo">Meio-Campo</option>
+              <option value="atacante">Atacante</option>
+              <option value="centroavante">Centroavante</option>
+        </label>
+      </select>
+    </div>
 
-
-        <div class="Criar">
-          <a href="menu.html">
-          <button class="button button-full button-positive">
-          Cadastrar Jogador
-          </button>
-        </div>
-
-      </ion-content>
-<ion-view>
-
-
+    <div class="CriarTime">
+      <button class="button button-block button-positive">
+        Cadastrar Jogador
+      </button>
+    </div>
+  </ion-content>
+</ion-view>
 
 

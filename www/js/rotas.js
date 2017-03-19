@@ -36,16 +36,8 @@ angular.module('starter').config(function($stateProvider,$urlRouterProvider){
 		url: '/cadTime',
 		views: {
 			'menuConteudo': {
-				templateUrl: 'templates/cadTime.html'
-			}
-		}
-	})
-
-	.state('menu.cadJogador',{
-		url: '/cadJogador',
-		views: {
-			'menuConteudo': {
-				templateUrl: 'templates/cadJogador.html'
+				templateUrl: 'templates/cadTime.html',
+				controller : 'TimeController'
 			}
 		}
 	})
@@ -55,11 +47,31 @@ angular.module('starter').config(function($stateProvider,$urlRouterProvider){
 		views:{
 			'menuConteudo':{
 				templateUrl: 'templates/listaTimes.html',
-				controller:'TimesCtrl'
+				controller:'TimeController'
 			}	
-		}
-		
+		}	
 	})
+
+	.state('menu.cadJogador',{
+		url: '/cadJogador',
+		views: {
+			'menuConteudo': {
+				templateUrl: 'templates/cadJogador.html',
+				controller : 'JogadorController'
+			}
+		}
+	})
+
+	.state('menu.listaJogadores',{
+		url: '/listaJogadores',
+		views:{
+			'menuConteudo':{
+				templateUrl: 'templates/listaJogadores.html',
+				controller : 'JogadorController'
+			}	
+		}	
+	})
+
 
 	$urlRouterProvider.otherwise('/index');
 });

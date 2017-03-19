@@ -14,15 +14,13 @@
 
         <ion-list show-delete="showDelete" show-reorder="data.showReorder">
           <ion-item ng-repeat="time in times">
-             {{ time.nome}} 
-             {{ time.casa}}
+            <h2> {{ time.nome}} </h2><h3>{{time.casa}}</h3><h4>{{time.rival}}</h4>
+             <ion-option-button class="button-assertive" ng-click="deleteTime(time)">
+              remove
+            </ion-option-button>
              <ion-reorder-button class="ion-navicon" on-reorder="moveTime(time, $fromIndex, $toIndex)"></ion-reorder-button>
              <ion-delete-button class="ion-minus-circled"></ion-delete-button>
           </ion-item>
         </ion-list>
       </ion-content>
-
-    <ion-footer-bar class = "bar-dark" id="barraSup"> 
-        <a href="menus.html"><button class= "button button-outline"> Voltar</button></a>
-    </ion-footer-bar>
 </ion-view>

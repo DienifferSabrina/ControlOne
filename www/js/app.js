@@ -23,32 +23,3 @@ angular.module('starter', ['ionic','ionic-datepicker'])
   });
 })
 
-
-
-
-
-
-
-
-.controller('TimesCtrl', function($scope) {
-  $scope.data = {
-    showReorder : false
-  }
-
-
-   $scope.moveTime = function(time, fromIndex, toIndex) {
-      $scope.times.splice(fromIndex, 1);
-      $scope.times.splice(toIndex, 0, time);
-  };
-
-   $scope.deleteTime = function (time) {
-      $scope.times.splice($scope.times.indexOf(time), 1);
-  };
-
-
-
- $scope.times = [
-   { nome: 'Corinthians' , rival : 'São Paulo'},
-   { nome : 'São Paulo'}
- ];
-});
