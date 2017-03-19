@@ -23,7 +23,8 @@ angular.module('starter').config(function($stateProvider,$urlRouterProvider){
 
 	.state('cadastro',{
 		url: '/cadastro',
-		templateUrl: 'templates/cadastro.html'
+		templateUrl: 'templates/cadastro.html',
+		controller:'usuarioController'
 	})
 
 	.state('login',{
@@ -48,8 +49,8 @@ angular.module('starter').config(function($stateProvider,$urlRouterProvider){
 			'menuConteudo':{
 				templateUrl: 'templates/listaTimes.html',
 				controller:'TimeController'
-			}	
-		}	
+			}
+		}
 	})
 
 	.state('menu.cadJogador',{
@@ -68,8 +69,8 @@ angular.module('starter').config(function($stateProvider,$urlRouterProvider){
 			'menuConteudo':{
 				templateUrl: 'templates/listaJogadores.html',
 				controller : 'JogadorController'
-			}	
-		}	
+			}
+		}
 	})
 
 
