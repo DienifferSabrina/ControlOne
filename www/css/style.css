@@ -1,0 +1,55 @@
+.titulo{
+	text-align: center;
+}
+
+.alinhamento{
+	padding:center;
+}
+
+.logo{
+	position: absolute;
+	left: 38px;
+	top: 90px;
+}
+		
+.Cadastro {
+	position: absolute;
+	left: 100px;
+	top: 400px;
+}	
+
+.Login {
+	position: absolute;
+	left: 115px;
+	top: 500px;
+}
+
+
+
+.logo2{
+	position: absolute;
+	left:38px;
+	top: 100px;
+}
+
+.Login2{
+	margin-top: 60px;
+	color: black;
+	font-style: oblique;
+	text-align: center;
+}
+
+.list{
+	left: -1px;
+	top : 20px;
+}
+.listPers{
+	margin-top: 45px;
+}
+
+.Play{
+	position: absolute;
+	left: 120px;
+	top: 450px;
+}
+

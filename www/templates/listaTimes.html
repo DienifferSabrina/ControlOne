@@ -1,0 +1,28 @@
+<ion-view>
+      <ion-nav-title>
+        <h1 class="title">Times Cadastrados</h1>
+      </ion-nav-title>
+      <ion-nav-buttons side="right">
+        <button class="button button-clear" ng-click="data.showReorder = !data.showReorder">Ordenar</button>
+      </ion-nav-buttons>
+      <ion-content>
+        <br>
+        <div class = "item item-input item-search">
+            <i class = "icon ion-android-search placeholder-ion-icon-search"></i>
+            <input type = "search" placeholder = "Procurar Time...">
+        </div>
+
+        <ion-list show-delete="showDelete" show-reorder="data.showReorder">
+          <ion-item ng-repeat="time in times">
+             {{ time.nome}} 
+             {{ time.casa}}
+             <ion-reorder-button class="ion-navicon" on-reorder="moveTime(time, $fromIndex, $toIndex)"></ion-reorder-button>
+             <ion-delete-button class="ion-minus-circled"></ion-delete-button>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+
+    <ion-footer-bar class = "bar-dark" id="barraSup"> 
+        <a href="menus.html"><button class= "button button-outline"> Voltar</button></a>
+    </ion-footer-bar>
+</ion-view>

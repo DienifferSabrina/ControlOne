@@ -1,0 +1,60 @@
+<ion-view>
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Cadastre já seu jogador !</h1>
+      </ion-header-bar>
+      <ion-content>
+        <div class="list1 list-inset">
+          <h4> Nome </h4>
+          <label class="item item-input">
+            <input type="text" placeholder="Nome" ng-model="jog.nomeJog" required autofocus/>
+          </label>
+          <label class="item item-input">
+            <input type="text" placeholder="Sobrenome" ng-model="jog.sobreJog" required />
+          </label>
+        </div>
+
+        <div class="list2 list-inset">
+          <h4> Nº Camisa </h4>
+          <label class="item item-input">
+            <input type="number"model="jog.numCamisa" required />
+          </label>
+        </div>
+
+        <div class="list3 list-inset">
+          <h4>Time</h4>
+          <label class="item item-input">
+            <input type="text" placeholder="Nome" ng-model="jog.nomeJog" required autofocus/>
+          </label>
+        </div>
+
+        <div class="list3 list-inset">
+          <h4>Posição </h4>
+            <label class="item item-input">
+              <select class="input-control" ng-model="jog.posicao" id="posicao">
+                <option value="">  </option>
+                <option value="goleiro">Goleiro</option>
+                <option value="zagueiro">Zagueiro</option>
+                <option value="lateral">Lateral</option>
+                <option value="volante">Volante</option>
+                <option value="meio-campo">Meio-Campo</option>
+                <option value="atacante">Atacante</option>
+                <option value="centroavante">Centroavante</option>
+              </select>
+            </label> 
+        </div>
+
+        <div class="Criar">
+          <a href="menu.html">
+          <button class="button button-full button-positive">
+          Cadastrar Jogador
+          </button>
+        </div>
+
+      </ion-content>
+    </ion-pane>
+<ion-view>
+
+
+
+

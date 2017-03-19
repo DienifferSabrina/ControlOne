@@ -1,0 +1,58 @@
+<ion-view>
+  <ion-pane>
+  <ion-header-bar class="bar-stable">
+    <h1 class="title">Faça já seu Cadastro !</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list1 list-inset">
+      <h4> Nome </h4>
+      <label class="item item-input">
+        <input type="text" placeholder="Nome" ng-model="cad.nome" required autofocus/>
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Sobrenome" ng-model="cad.sobrenome" required />
+      </label>
+    </div>
+
+    <div class="list2 list-inset">
+      <h4> Data de Nascimento </h4>
+      <label class="item item-input">
+        <input type="date" required />
+      </label>
+    </div>
+
+        <div class="list3 list-inset">
+        <h4>Sexo </h4>
+        <ion-radio ng-model="cad.sexo" ng-value="'M'">Masculino</ion-radio>
+        <ion-radio ng-model="cad.sexo" ng-value="'B'">Feminino</ion-radio>
+        </div>
+
+        <div class="list4 list-inset">
+        <h4>E-mail </h4>
+        <label class="item item-input">
+          <input type="email" ng-model="cad.email" placeholder="E-mail" required/>
+        </label>
+      
+        <div class="list5 list-inset">
+        <h4>Senha </h4>
+        <label class="item item-input">
+          <input type="password" ng-model="cad.senha" maxlength="15" placeholder="Senha" required/>
+        </label>
+        <label class="item item-input">
+          <input type="password" maxlength="15" placeholder="Confirmação de Senha" required/>
+        </label>
+        </div>
+        
+        <div class="Criar">
+          <a href="#/login">
+          <button class="button button-full button-positive">
+          Criar Cadastro
+          </button>
+        </div>
+      </ion-content>
+    </ion-pane>
+</ion-view>
+
+
+
+
