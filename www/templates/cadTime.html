@@ -1,26 +1,26 @@
 <ion-view>
-    <ion-pane>
-      <ion-nav-title>
-      <ion-header-bar class="bar bar-header bar-positive">
-        <h1 class="title">Cadastre já o seu Time !</h1>
-      </ion-header-bar>
-      </ion-nav-title>
+    <ion-nav-bar class="bar bar-positive">
+    <ion-nav-back-button>Voltar</ion-nav-back-button> <!-- botao voltar na barra superior -->
+    <ion-nav-title>
+      <h1 class="title">Cadastre já o seu Time !</h1> <!-- titulo barra superior -->
+    </ion-nav-title>
+  </ion-nav-bar>
       <ion-content>
-        <div class="list1 list-inset">
+        <div class="list list-inset">
           <h4> Nome </h4>
           <label class="item item-input">
             <input type="text" placeholder="Nome do time">
           </label>
         </div>
 
-        <div class="list2 list-inset">
+        <div class="list list-inset">
           <h4> Casa </h4>
           <label class="item item-input">
             <input type="text" placeholder="Casa">
           </label>
         </div>
 
-        <div class="list3 list-inset">
+        <div class="list list-inset">
           <h4> Principal Rival </h4>
           <label class="item item-input">
             <input type="text" placeholder="Nome do Rival">
@@ -28,13 +28,9 @@
         </div>
 
         <div class="CriarTime">
-          <a href="#/listaTime"> 
           <button class="button button-block button-positive">
           Cadastrar Time
           </button>
-      
-        
         </div>
       </ion-content>
-    </ion-pane>
 </ion-view>

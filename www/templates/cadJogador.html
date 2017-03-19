@@ -1,48 +1,37 @@
 <ion-view>
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Cadastre já seu jogador !</h1>
-      </ion-header-bar>
+      <ion-nav-bar class="bar bar-positive">
+    <ion-nav-back-button>Voltar</ion-nav-back-button> <!-- botao voltar na barra superior -->
+    <ion-nav-title>
+      <h1 class="title">Cadastre já o seu Jogador !</h1> <!-- titulo barra superior -->
+    </ion-nav-title>
+  </ion-nav-bar>
       <ion-content>
-        <div class="list1 list-inset">
+       
+        <div class="list list-inset">
           <h4> Nome </h4>
           <label class="item item-input">
-            <input type="text" placeholder="Nome" ng-model="jog.nomeJog" required autofocus/>
+            <input type="text" placeholder="Nome">
           </label>
           <label class="item item-input">
-            <input type="text" placeholder="Sobrenome" ng-model="jog.sobreJog" required />
+            <input type="text" placeholder="Sobrenome">
           </label>
         </div>
 
-        <div class="list2 list-inset">
+        <div class="list list-inset">
           <h4> Nº Camisa </h4>
           <label class="item item-input">
-            <input type="number"model="jog.numCamisa" required />
+            <input type="number">
           </label>
         </div>
 
-        <div class="list3 list-inset">
+        <div class="list list-inset">
           <h4>Time</h4>
           <label class="item item-input">
-            <input type="text" placeholder="Nome" ng-model="jog.nomeJog" required autofocus/>
+            <input type="text" placeholder="Nome">
           </label>
         </div>
 
-        <div class="list3 list-inset">
-          <h4>Posição </h4>
-            <label class="item item-input">
-              <select class="input-control" ng-model="jog.posicao" id="posicao">
-                <option value="">  </option>
-                <option value="goleiro">Goleiro</option>
-                <option value="zagueiro">Zagueiro</option>
-                <option value="lateral">Lateral</option>
-                <option value="volante">Volante</option>
-                <option value="meio-campo">Meio-Campo</option>
-                <option value="atacante">Atacante</option>
-                <option value="centroavante">Centroavante</option>
-              </select>
-            </label> 
-        </div>
+
 
         <div class="Criar">
           <a href="menu.html">
@@ -52,7 +41,6 @@
         </div>
 
       </ion-content>
-    </ion-pane>
 <ion-view>
 
 
