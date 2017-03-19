@@ -1,9 +1,25 @@
 <ion-view>
-  <ion-pane>
-  <ion-header-bar class="bar-stable">
-    <h1 class="title">Faça já seu Cadastro !</h1>
-  </ion-header-bar>
+  <ion-nav-bar class="bar bar-positive">
+    <ion-nav-back-button>Voltar</ion-nav-back-button> <!-- botao voltar na barra superior -->
+    <ion-nav-title>
+      <h1 class="title">Faça seu cadastro já!</h1> <!-- titulo barra superior -->
+    </ion-nav-title>
+  </ion-nav-bar>
   <ion-content>
+    <div class="list list-inset">
+      <h4>Nome</h4>
+      <label class="item item-input">
+        <input type="text" placeholder="Nome">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Sobrenome">
+      </label>
+    </div>
+
+
+
+
+    <!--
     <div class="list1 list-inset">
       <h4> Nome </h4>
       <label class="item item-input">
@@ -32,7 +48,7 @@
         <label class="item item-input">
           <input type="email" ng-model="cad.email" placeholder="E-mail" required/>
         </label>
-      
+
         <div class="list5 list-inset">
         <h4>Senha </h4>
         <label class="item item-input">
@@ -42,17 +58,12 @@
           <input type="password" maxlength="15" placeholder="Confirmação de Senha" required/>
         </label>
         </div>
-        
+
         <div class="Criar">
           <a href="#/login">
           <button class="button button-full button-positive">
           Criar Cadastro
           </button>
-        </div>
+        </div>-->
       </ion-content>
-    </ion-pane>
 </ion-view>
-
-
-
-
